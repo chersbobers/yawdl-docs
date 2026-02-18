@@ -6,34 +6,29 @@ UI {
   <div class="page">
     <header class="site-header">
       <div class="subtitle">Yet Another Web Development Language</div>
-      <h1><a href="/"yawdl</a></h1>
-    </header>
+      <h1><a href="/">yawdl</a></h1> </header>
 
     <section>
       <h3>What is this?</h3>
-      <p>yawdl is a simple easy fits all projects language it runs client side which means. <strong>No servers, no overhead.</strong> Just write and run.</p>
+      <p>yawdl is a simple easy fits all projects language. It runs client-side which means: <strong>No servers, no overhead.</strong> Just write and run.</p>
     </section>
 
     <section>
       <h3>Installation</h3>
       <div class="install-method">
         <div class="method-title">For Windows</div>
-        <code>powershell -c "iwr https://raw.githubusercontent.com/chersbobers/yawdl/main/install.ps1 | iex""</code>
-      </div>
+        <code>powershell -c "iwr https://raw.githubusercontent.com/chersbobers/yawdl/main/install.ps1 | iex"</code> </div>
       
       <div class="install-method">
         <div class="method-title">From Source</div>
         <code>git clone https://github.com/chersbobers/yawdl</code>
       </div>
     </section>
-    
-
 
     <footer class="site-footer">
       <div class="link-row">
         <a href="https://github.com/chersbobers/yawdl">GitHub</a>
-        <a href="/docs">Documentation</a>
-        <a href="https://chersbobers.github.io/">Blog</a>
+        <a href="docs.html">Documentation</a> <a href="https://chersbobers.github.io/">Blog</a>
       </div>
       <div class="credit">Built with yawdl</div>
     </footer>
