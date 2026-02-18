@@ -1,4 +1,4 @@
-Paget { YAWDL | Syntax Guide }
+Paget { yawdl }
 
 Import("styles.css")
 
@@ -46,7 +46,7 @@ UI {
         <span>Attributes and classes are handled natively.</span>
       </div>
     </section>
-    
+
     <footer class="site-footer">
       <div class="link-row">
         <a href="index.html">← Back Home</a>
