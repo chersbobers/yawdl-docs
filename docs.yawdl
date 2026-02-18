@@ -11,7 +11,7 @@ UI {
 
     <section>
       <h3>Setting up a project</h3>
-      <p>Install YAWDL using your preferred method. In a new folder, run the executable or use the terminal command if you used the automated installer:</p>
+      <p>Install yawdl using your preferred method. In a new folder, run the executable or use the terminal command if you used the automated installer:</p>
       
       <div class="install-method">
         <code>powershell -c "iwr https://raw.githubusercontent.com/chersbobers/yawdl/main/install.ps1 | iex"</code>
@@ -19,7 +19,7 @@ UI {
       
       <p>Once installed, initialize your workspace:</p>
       <div class="cmd-row">
-        <code>yawdl init</code>
+        <code>yawdl</code>
         <span>Generates core project files</span>
       </div>
     </section>
