@@ -1,0 +1,285 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #191724;
+  --fg: #e0def4;
+  --fg-muted: #908caa;
+  --link: #ebbcba;
+  --link-hover: #f6c177;
+  --border: #403d52;
+  --code-bg: #26233a;
+  --mono: "IBM Plex Mono", "Courier New", monospace;
+  --sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fg-muted);
+}
+
+::selection {
+  background: #c4a7e7;
+  color: #191724;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-color: var(--border) var(--bg);
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+}
+
+.site-header .subtitle {
+  font-size: 0.875rem;
+  color: var(--fg-muted);
+  letter-spacing: 0.02em;
+}
+
+.site-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 0.15rem;
+  line-height: 1.1;
+}
+
+.site-header h1 a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.site-header h1 a:hover {
+  color: var(--link);
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: 700;
+  color: #c4a7e7;
+}
+
+ul.features {
+  list-style: none;
+  padding: 0;
+}
+
+ul.features li {
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.6;
+  margin-bottom: 0.25rem;
+}
+
+ul.features li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #31748f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+
+.gallery img:hover {
+  border-color: var(--link);
+}
+
+.commands-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cmd-category-btn {
+  background: none;
+  border: none;
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+.cmd-category-btn:hover {
+  color: var(--link-hover);
+}
+
+.cmd-panel {
+  display: none;
+  margin: 0.5rem 0 0.25rem 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+}
+
+.cmd-panel.open {
+  display: block;
+}
+
+.cmd-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.15rem 0;
+}
+
+.cmd-row code {
+  font-family: var(--mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  white-space: nowrap;
+  background: none;
+  padding: 0;
+  color: #9ccfd8;
+}
+
+.cmd-row span {
+  font-size: 0.875rem;
+  color: var(--fg-muted);
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  background: var(--code-bg);
+  color: #e0def4;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+.install-method {
+  margin-bottom: 1.25rem;
+}
+
+.install-method .method-title {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+  margin-top: 0.5rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.site-footer .credit {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--fg-muted);
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 2rem 1rem 3rem;
+  }
+  .site-header h1 {
+    font-size: 2rem;
+  }
+}
+
+.post-entry {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-entry code {
+  background: none;
+  padding: 0;
+  color: var(--fg-muted);
+  font-weight: 400;
+  min-width: 100px;
+}
+
+.post-entry h3 {
+  margin: 0;
+  display: inline;
+  font-size: 1.125rem;
+}
+/* added to update the repo :) */

@@ -1,0 +1,45 @@
+Paget { yawdl }
+
+Import("styles.css")
+
+UI {
+  <div class="page">
+    <header class="site-header">
+      <div class="subtitle">Yet Another Web Development Language</div>
+      <h1><a href="/">YAWDL</a></h1>
+    </header>
+
+    <section>
+      <h3>What is this?</h3>
+      <p>YAWDL is a client-side language built for speed and simplicity. <strong>No servers, no overhead.</strong> Just write and run.</p>
+    </section>
+
+    <section>
+      <h3>Installation</h3>
+      <div class="install-method">
+        <div class="method-title">For Windows</div>
+        <code>powershell -c "iwr https://raw.githubusercontent.com/chersbobers/yawdl/main/install.ps1 | iex""</code>
+      </div>
+      
+      <div class="install-method">
+        <div class="method-title">From Source</div>
+        <code>git clone https://github.com/chersbobers/yawdl</code>
+      </div>
+    </section>
+    
+
+
+    <footer class="site-footer">
+      <div class="link-row">
+        <a href="https://github.com/chersbobers/yawdl">GitHub</a>
+        <a href="/docs">Documentation</a>
+        <a href="https://chersbobers.github.io/">Blog</a>
+      </div>
+      <div class="credit">Built with yawdl</div>
+    </footer>
+  </div>
+}
+
+Script {
+  console.log("Docs loaded with Rose Pine theme.");
+}
