@@ -6,12 +6,12 @@ UI {
   <div class="page">
     <header class="site-header">
       <div class="subtitle">Yet Another Web Development Language</div>
-      <h1><a href="/">YAWDL</a></h1>
+      <h1><a href="/"yawdl</a></h1>
     </header>
 
     <section>
       <h3>What is this?</h3>
-      <p>YAWDL is a client-side language built for speed and simplicity. <strong>No servers, no overhead.</strong> Just write and run.</p>
+      <p>yawdl is a simple easy fits all projects language it runs client side which means. <strong>No servers, no overhead.</strong> Just write and run.</p>
     </section>
 
     <section>
